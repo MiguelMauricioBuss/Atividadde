@@ -9,16 +9,11 @@ function LOGIN(){
     defineCampos()
     var usuario = entrada1.value
     var senha = entrada2.value
-    if (usuario != "admin"){
-        saida.innerHTML = "Usuário ou senha incorreto"
+    if (usuario != "admin" || senha != "123"){
+    saida.innerHTML = "Usuário ou senha incorreto"
     }
-        else{
+        else {
     saida.innerHTML = "Login efetuado!"
 }
-    if (senha != "123"){
-        saida.innerHTML = "Usuário ou senha incorreto"
-    }
-else{
-    saida.innerHTML = "Login efetuado!"
-}
+    
 }
